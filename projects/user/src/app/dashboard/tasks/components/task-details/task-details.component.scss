@@ -1,0 +1,28 @@
+.imageBox {
+    height: 250px;
+    margin-right: 20px;
+    img {
+    height: 250px;
+    max-width: 100%;
+    }
+}
+title{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+span{
+  font-weight: bold;
+  font-size: 16px;
+}
+.item{
+  width: 200px !important;
+}
+.skeleton{
+  .data{
+    width: 180px !important;
+  }
+  .skeletonTitle{
+    width: 300px !important;
+  }
+}

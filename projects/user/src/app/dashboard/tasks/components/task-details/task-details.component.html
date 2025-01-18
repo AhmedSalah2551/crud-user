@@ -1,0 +1,56 @@
+<div class="mt-3">
+  <div class="d-flex align-items-center" *ngIf="loading == true">
+    <div class="imageBox">
+      <img src="../assets/pngwing.com.png" alt="img" class="w-100">
+    </div>
+    <div class="completeBtn">
+      <button mat-raised-button (click)="changeStatus()" color="primary">Mark as Completed</button>
+    </div>
+  </div>
+
+  <div class="item mt-2" *ngIf="loading == false">
+    <ngx-skeleton-loader [theme]="{height: '150px'}"></ngx-skeleton-loader>
+  </div>
+
+  <div class="mt-4">
+    <div class="title">
+      <span *ngIf="loading == true">Title: </span>
+      <h1>{{data?.title}}</h1>
+    </div>
+    <div class="title">
+      <span *ngIf="loading == true">Deadline: </span>
+      <h1>{{data?.deadline}}</h1>
+    </div>
+    <div class="title">
+      <span *ngIf="loading == true">Description: </span>
+      <h1>{{data?.description}}</h1>
+    </div>
+
+    <div class="skeleton">
+      <div class="data">
+        <ngx-skeleton-loader *ngIf="loading == false" [theme]="{height: '25px'}"></ngx-skeleton-loader>
+      </div>
+      <div class="skeletonTitle">
+        <ngx-skeleton-loader *ngIf="loading == false" [theme]="{height: '35px'}"></ngx-skeleton-loader>
+      </div>
+    </div>
+
+    <div class="skeleton">
+      <div class="data">
+        <ngx-skeleton-loader *ngIf="loading == false" [theme]="{height: '25px'}"></ngx-skeleton-loader>
+      </div>
+      <div class="skeletonTitle">
+        <ngx-skeleton-loader *ngIf="loading == false" [theme]="{height: '35px'}"></ngx-skeleton-loader>
+      </div>
+    </div>
+
+    <div class="skeleton">
+      <div class="data">
+        <ngx-skeleton-loader *ngIf="loading == false" [theme]="{height: '25px'}"></ngx-skeleton-loader>
+      </div>
+      <div class="skeletonTitle">
+        <ngx-skeleton-loader *ngIf="loading == false" [theme]="{height: '35px'}"></ngx-skeleton-loader>
+      </div>
+    </div>
+  </div>
+</div>

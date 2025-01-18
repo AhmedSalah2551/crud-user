@@ -1,0 +1,29 @@
+<div class="login d-flex justify-content-center align-items-center m-auto p-4">
+  <div>
+      <div>
+      <div class="d-flex align-items-center justify-content-center w-100 py-4">
+          <div class="box w-100">
+              <h2>Login</h2>
+              <form [formGroup]="loginForm">
+                  <mat-form-field appearance="outline" class="w-100">
+                      <mat-label>Email</mat-label>
+                      <input matInput placeholder="email" formControlName="email">
+                      <mat-error>Required</mat-error>
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="w-100">
+                      <mat-label>Password</mat-label>
+                      <input matInput type="password" placeholder="password" formControlName="password">
+                      <mat-error>Required</mat-error>
+                  </mat-form-field>
+              </form>
+              <div class="d-flex justify-content-center">
+                <button mat-raised-button color="warn" (click)="login()">Login</button>
+            </div>
+              <div class="d-flex justify-content-center mt-2">
+                  <a class="register" routerLink="/auth/register" routerLinkActive="active">Don't have an account? Register</a>
+            </div>
+          </div>
+      </div>
+      </div>
+  </div>
+</div>

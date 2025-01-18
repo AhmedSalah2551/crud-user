@@ -1,0 +1,59 @@
+{
+  "dir":"rtl",
+  "tasks":{
+    "Add Task":"أضافة مهمة",
+    "Search":"بحث",
+    "Status":"الحالة",
+    "All Users":"جميع المستخدمين",
+    "User":"المستخدم",
+    "deadline":"الموعد النهائي",
+    "Title":"المهمة",
+    "No.":"رقم",
+    "Update":"تحديث",
+    "Delete":"حذف",
+    "Complete":"مكتمل",
+    "InActive":"الغاء التفعيل",
+    "In Progress":"في تقدم",
+    "Active":"تفعيل",
+    "Name":"الاسم",
+    "Email":"الايميل",
+    "Tasks Assigned":"المهام المرتبطة",
+    "date":"أدخل نطاقًا زمنيًا"
+  },
+  "header":{
+    "All Tasks":"جميع المهام",
+    "Users":"المستخدمين",
+    "Tasks":"المهام"
+  },
+  "toaster":{
+    "Task Updated Successfuly":"تم تحديث المهمة بنجاح",
+    "Task Deleted Successfuly":"تم حذف المهمة بنجاح",
+    "User Has Tasks":"المستخدم مرتبط بمهمة",
+    "User Status Changed Successfuly":"تم تغيير الحالة بنجاح",
+    "You Can't Delete This User":"لا يمكنك حذف هذا المستخدم",
+    "Success":"نجاح"
+  },
+  "login":{
+    "Success Login":"تسجيل دخول ناجح",
+    "Login":"تسجيل الدخول",
+    "Email":"الايميل",
+    "Password":"كلمة المرور",
+    "login":"تسجيل",
+    "Required":"مطلوب"
+  },
+  "general":{
+    "Loading":"تحميل"
+  },
+  "addtask":{
+    "Add":"أضافة",
+    "Select":"أختيار الصورة",
+    "User":"المستخدم",
+    "Title":"المهمة",
+    "Description":"الوصف",
+    "deadline":"الموعد النهائي",
+    "NewTask":"أضافة مهمة جديدة",
+    "Close":"أغلاق",
+    "Create":"انشاء",
+    "Update":"تحديث"
+  }
+}

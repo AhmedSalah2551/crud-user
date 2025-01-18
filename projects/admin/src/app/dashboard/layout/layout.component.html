@@ -1,0 +1,41 @@
+<div class="mat-app-background" style="min-height: 100vh;" [ngClass]="{'dark': newMode, 'light': !newMode}">
+  <mat-toolbar>
+    <a routerLink="/tasks" class="brand">Tasks</a>
+    <a class="address" routerLink="/tasks" routerLinkActive="active">All Tasks<span class="sr-only">(current)</span></a>
+    <a class="address" routerLink="/users" routerLinkActive="active">Users</a>
+    <span class="example-spacer"></span>
+    <div class="toggleWrapper">
+      <input type="checkbox" class="dn" id="dn" (click)="toggleDarkMode()" [(ngModel)]="newMode">
+      <label for="dn" class="toggle">
+          <span class="toggle__handler">
+              <span class="crater crater--1"></span>
+              <span class="crater crater--2"></span>
+              <span class="crater crater--3"></span>
+          </span>
+          <span class="star star--1"></span>
+          <span class="star star--2"></span>
+          <span class="star star--3"></span>
+          <span class="star star--4"></span>
+          <span class="star star--5"></span>
+          <span class="star star--6"></span>
+      </label>
+  </div>
+    <a class="language" (click)="changeLang()">{{language == "en" ? "ع" : "E"}}</a>
+    <a class="logOut" routerLink="/login" (click)="logOut()"><mat-icon>exit_to_app</mat-icon></a>
+    <button type="button" mat-button (click)="toggleSidenav()" class="sideButton">
+      <mat-icon class="mat-18">menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <div class="sidenav" [ngClass]="{'open': isSidenavOpen, 'darkSideNav': newMode}">
+    <h1 class="my-2 ml-2">Tasks</h1>
+    <div class="sideElements d-flex mt-5">
+      <a routerLink="/tasks" routerLinkActive="active" (click)="toggleSidenav()">All Tasks<span class="sr-only">(current)</span></a>
+      <a routerLink="/users" routerLinkActive="active" (click)="toggleSidenav()">Users</a>
+      <a (click)="changeLang()" (click)="toggleSidenav()">{{language == "en" ? "عربي" : "English"}}</a>
+      <a class="exit" routerLink="/login" (click)="logOut()" (click)="toggleSidenav()"><mat-icon>exit_to_app</mat-icon></a>
+    </div>
+  </div>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<div class="login d-flex justify-content-center align-items-center m-auto p-4">
+  <div>
+    <div>
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <div class="box w-100">
+          <h2>Register</h2>
+          <form [formGroup]="registerForm">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Username</mat-label>
+              <input
+                matInput
+                placeholder="username"
+                formControlName="username"
+              />
+              <mat-error>Required</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="email" formControlName="email" />
+              <mat-error>Required</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Password</mat-label>
+              <input
+                matInput
+                type="password"
+                placeholder="password"
+                formControlName="password"
+              />
+              <mat-error>Required</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Confirm Password</mat-label>
+              <input
+                matInput
+                type="password"
+                placeholder="confirm password"
+                formControlName="confirmPass"
+              />
+              <mat-error>Required</mat-error>
+              <mat-hint *ngIf="registerForm.hasError('notmatched')"
+                >Password does not match</mat-hint
+              >
+            </mat-form-field>
+          </form>
+          <div class="d-flex justify-content-center">
+            <button
+              mat-raised-button
+              color="warn"
+              [disabled]="registerForm.invalid"
+              (click)="register()"
+            >
+              Register
+            </button>
+          </div>
+          <div class="d-flex justify-content-center register">
+            <a routerLink="/auth/login">Already have an account? Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

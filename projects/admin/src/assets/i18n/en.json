@@ -1,0 +1,60 @@
+{
+  "dir":"ltr",
+  "tasks":{
+    "Add Task":"Add Task",
+    "Search":"Search",
+    "Status":"Status",
+    "All Users":"All Users",
+    "User":"User",
+    "deadline":"DeadLine Date",
+    "Title":"Title",
+    "No.":"No",
+    "Update":"Update",
+    "Delete":"Delete",
+    "Complete":"Complete",
+    "InActive":"InActive",
+    "In Progress":"In Progress",
+    "Active":"Active",
+    "Name":"Name",
+    "Email":"Email",
+    "Tasks Assigned":"Tasks Assigned",
+    "date":"Enter a date range"
+
+  },
+  "header":{
+    "All Tasks":"All Tasks",
+    "Users":"Users",
+    "Tasks":"Tasks"
+  },
+  "toaster":{
+    "Task Updated Successfuly":"Task Updated Successfuly",
+    "Task Deleted Successfuly":"Task Deleted Successfuly",
+    "User Has Tasks":"User Has Tasks",
+    "User Status Changed Successfuly":"User Status Changed Successfuly",
+    "You Can't Delete This User":"You Can't Delete This User",
+    "Success":"Success"
+  },
+  "login":{
+    "Success Login":"Success Login",
+    "Login":"Login",
+    "Email":"Email",
+    "Password":"password",
+    "login":"Login",
+    "Required":"Required"
+  },
+  "general":{
+    "Loading":"Loading"
+  },
+  "addtask":{
+    "Add":"Add",
+    "Select":"Select Image",
+    "User":"User",
+    "Title":"Title",
+    "Description":"Description",
+    "deadline":"DeadLine Date",
+    "NewTask":"Add New Task",
+    "Close":"Close",
+    "Create":"Create",
+    "Update":"Update"
+  }
+}

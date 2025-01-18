@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuser=self.webpackChunkuser||[]).push([[592],{7507:(t,e,s)=>{s.d(e,{N:()=>n});const n={production:!1,baseApi:"https://testmessi.onrender.com/tasks/"}}}]);

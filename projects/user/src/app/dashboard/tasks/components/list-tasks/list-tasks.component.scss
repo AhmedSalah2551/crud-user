@@ -1,0 +1,39 @@
+button {
+    color: #FFF;
+    margin: 0 5px;
+    &.addTask {
+        background-color: #ca085a;
+        color: #FFF;
+        padding: 2px 23px;
+        font-size: 20px;
+    }
+}
+img{
+  min-width: 100%;
+  height: 100px;
+}
+.listBox{
+  overflow-x: auto;
+}
+:host ::ng-deep {
+    table {
+      min-width: 1000px;
+        thead {
+            background-color: #bc1059!important;
+            .mat-header-cell {
+                color: #FFF;
+            }
+        }
+    }
+}
+
+.w-20 {
+    width: 20%!important;
+}
+
+h2 {
+    color: #bc1059;
+}
+.my-pagination ::ng-deep .ngx-pagination .current {
+  background: #ca085a !important;
+}
